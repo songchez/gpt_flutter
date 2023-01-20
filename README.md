@@ -1,6 +1,10 @@
 # flutter_sehan
 
-A new Flutter project.
+### 새한건설정보 웹앱페이지
+
+1. 데이터 입력하면 기업진단 받을 수 있다.
+2. 우리의 기본적인 정보
+3. HERO페이지
 
 ## Getting Started
 

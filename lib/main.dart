@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sehan/components/Heros.dart';
+import 'package:flutter_sehan/components/inputfield.dart';
 
 void main() {
   runApp(const MyApp());
@@ -62,19 +64,22 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: <Widget>[
         Container(
-          color: Colors.red,
           alignment: Alignment.center,
-          child: const Text('Page 1'),
+          child: const IputField(),
         ),
         Container(
           color: Colors.green,
           alignment: Alignment.center,
-          child: const Text('Page 2'),
+          child: const Heros(),
         ),
         Container(
           color: Colors.blue,
           alignment: Alignment.center,
-          child: const Text('Page 3'),
+          child: const Text('Comming Soon!!',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 35,
+              )),
         ),
       ][currentPageIndex],
     );

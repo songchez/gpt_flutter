@@ -17,8 +17,8 @@ class Heros extends StatelessWidget {
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              const Text(
+            children: const <Widget>[
+              Text(
                 'Business Consulting',
                 style: TextStyle(
                   color: Colors.white,
@@ -26,8 +26,8 @@ class Heros extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const SizedBox(height: 10.0),
-              const Text(
+              SizedBox(height: 10.0),
+              Text(
                 'We help businesses succeed',
                 style: TextStyle(
                   color: Colors.white,
@@ -66,19 +66,19 @@ class Heros extends StatelessWidget {
                       color: Colors.grey[300],
                     ),
                     const SizedBox(height: 20.0),
-                    ServiceCard(
+                    const ServiceCard(
                       icon: Icons.business_center,
                       title: 'Business Strategy',
                       description:
                           'We help businesses develop a clear and effective strategy to reach their goals.',
                     ),
-                    ServiceCard(
+                    const ServiceCard(
                       icon: Icons.monetization_on,
                       title: 'Financial Management',
                       description:
                           'We provide financial management services to help businesses make informed decisions.',
                     ),
-                    ServiceCard(
+                    const ServiceCard(
                       icon: Icons.people,
                       title: 'Human Resources',
                       description:
@@ -89,7 +89,7 @@ class Heros extends StatelessWidget {
                         onTap: () {
                           'Learn More button clicked';
                         },
-                        child: Container(
+                        child: const SizedBox(
                           width: double.infinity,
                           height: 50.0,
                         ))
@@ -103,8 +103,11 @@ class ServiceCard extends StatelessWidget {
   final String title;
   final String description;
 
-  ServiceCard(
-      {required this.icon, required this.title, required this.description});
+  const ServiceCard(
+      {super.key,
+      required this.icon,
+      required this.title,
+      required this.description});
 
   @override
   Widget build(BuildContext context) {

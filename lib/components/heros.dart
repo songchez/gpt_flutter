@@ -5,81 +5,85 @@ class Heros extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: SingleChildScrollView(
-        child: Column(children: <Widget>[
-          Container(
-            decoration: const BoxDecoration(color: Colors.black),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: const <Widget>[
-                Text(
-                  '새한건설정보',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24.0,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                SizedBox(height: 10.0),
-                Text(
-                  '건설업 면허 하나부터 열까지, 성공을 위한 선택',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 18.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Container(
+      child: Container(
+        decoration: const BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage("images/back.png"), fit: BoxFit.fitHeight)),
+        child: SingleChildScrollView(
+          child: Column(children: <Widget>[
+            SizedBox(
               width: 500,
-              decoration: const BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(30.0),
-                  topRight: Radius.circular(30.0),
-                ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: const <Widget>[
+                  Text(
+                    '새한건설정보',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  SizedBox(height: 15),
+                  Text(
+                    '건설업 면허등록 하나부터 열까지, 성공을 위한 선택',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                    ),
+                  ),
+                ],
               ),
-              child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                  child: Column(children: <Widget>[
-                    const SizedBox(height: 30.0),
-                    const Text(
-                      'What We Offer',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18.0,
+            ),
+            Container(
+                width: 500,
+                decoration: const BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(30.0),
+                    topRight: Radius.circular(30.0),
+                  ),
+                ),
+                child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                    child: Column(children: <Widget>[
+                      const SizedBox(height: 30.0),
+                      const Text(
+                        '기업맞춤형 컨설팅',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18.0,
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 20.0),
-                    Container(
-                      width: double.infinity,
-                      height: 1.0,
-                      color: Colors.grey[300],
-                    ),
-                    const SizedBox(height: 20.0),
-                    const ServiceCard(
-                      icon: Icons.business_center,
-                      title: 'Business Strategy',
-                      description:
-                          'We help businesses develop a clear and effective strategy to reach their goals.',
-                    ),
-                    const ServiceCard(
-                      icon: Icons.monetization_on,
-                      title: 'Financial Management',
-                      description:
-                          'We provide financial management services to help businesses make informed decisions.',
-                    ),
-                    const ServiceCard(
-                      icon: Icons.people,
-                      title: 'Human Resources',
-                      description:
-                          'We help businesses attract, retain, and manage top talent to drive success.',
-                    ),
-                    const SizedBox(height: 20.0),
-                  ]))),
-          ElevatedButton(onPressed: () {}, child: const Text("기업진단 받아보기"))
-        ]),
+                      const SizedBox(height: 20.0),
+                      Container(
+                        width: double.infinity,
+                        height: 1.0,
+                        color: Colors.grey[300],
+                      ),
+                      const SizedBox(height: 20.0),
+                      const ServiceCard(
+                        icon: Icons.business_center,
+                        title: '건설업등록',
+                        description: '건설업등록에 필요한 모든 것을 제공합니다.',
+                      ),
+                      const ServiceCard(
+                        icon: Icons.monetization_on,
+                        title: '공사업양도/양수',
+                        description: '귀사에 꼭 필요한 양도물건 찾아드립니다.',
+                      ),
+                      const ServiceCard(
+                        icon: Icons.people,
+                        title: '기술인력',
+                        description: '딱 맞는 기술인력 찾아드리겠습니다',
+                      ),
+                      const SizedBox(height: 20.0),
+                    ]))),
+            ElevatedButton(onPressed: () {}, child: const Text("기업진단 받아보기")),
+            const SizedBox(height: 20.0),
+          ]),
+        ),
       ),
     );
   }

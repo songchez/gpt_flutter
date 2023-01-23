@@ -6,12 +6,14 @@ class Heros extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
+        width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage("images/back.png"), fit: BoxFit.fitHeight)),
+                image: AssetImage("images/back.jpg"), fit: BoxFit.fitHeight)),
         child: SingleChildScrollView(
           child: Column(children: <Widget>[
-            SizedBox(
+            Container(
+              margin: const EdgeInsets.all(20),
               width: 500,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -19,7 +21,7 @@ class Heros extends StatelessWidget {
                   Text(
                     '새한건설정보',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 30,
                       fontWeight: FontWeight.bold,
                     ),
@@ -28,7 +30,7 @@ class Heros extends StatelessWidget {
                   Text(
                     '건설업 면허등록 하나부터 열까지, 성공을 위한 선택',
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 30,
                     ),
                   ),
@@ -51,7 +53,7 @@ class Heros extends StatelessWidget {
                       const Text(
                         '기업맞춤형 컨설팅',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
                           fontSize: 18.0,
                         ),
@@ -60,7 +62,7 @@ class Heros extends StatelessWidget {
                       Container(
                         width: double.infinity,
                         height: 1.0,
-                        color: Colors.grey[300],
+                        color: Colors.grey[100],
                       ),
                       const SizedBox(height: 20.0),
                       const ServiceCard(

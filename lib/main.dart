@@ -65,7 +65,6 @@ class _MyHomePageState extends State<MyHomePage> {
           child: const IputField(),
         ),
         Container(
-          color: Colors.green,
           alignment: Alignment.center,
           child: const Heros(),
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sehan/components/Heros.dart';
-import 'package:flutter_sehan/components/inputfield.dart';
+import 'package:flutter_sehan/components/heros.dart';
+import 'package:flutter_sehan/components/input_field.dart';
 
 void main() {
   runApp(const MyApp());

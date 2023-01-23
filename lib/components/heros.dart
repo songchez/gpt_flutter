@@ -14,7 +14,7 @@ class Heros extends StatelessWidget {
             height: 100,
             color: Colors.blue,
             child: Column(
-              children: const [Text("자 드가자1"), Text("자 드가자2"), Text("자 드가자3")],
+              children: const [Text("뭔디")],
             ),
           ),
         ),

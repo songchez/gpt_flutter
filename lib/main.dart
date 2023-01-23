@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_sehan/components/heros.dart';
 
 void main() {
   runApp(const MyApp());
@@ -75,7 +76,13 @@ class _MyHomePageState extends State<MyHomePage> {
               TextButton(
                   onPressed: _incrementCounter, child: const Icon(Icons.add)),
               TextButton(
-                  onPressed: _incrementCounter,
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const Heros(),
+                      ),
+                    );
+                  },
                   style: const ButtonStyle(
                     minimumSize: MaterialStatePropertyAll<Size>(Size(100, 50)),
                     backgroundColor:

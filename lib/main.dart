@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_sehan/components/heros.dart';
-import 'package:flutter_sehan/components/input_field.dart';
+import 'package:flutter_sehan/components/test.dart';
+import 'package:flutter_sehan/components/input.dart';
 
 void main() {
   runApp(const MyApp());
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         Container(
           alignment: Alignment.center,
-          child: const Heros(),
+          child: const Gpttest(),
         ),
         Container(
           color: Colors.blue,

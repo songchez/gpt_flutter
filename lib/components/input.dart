@@ -25,10 +25,10 @@ class _IputFieldState extends State<IputField> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text("정보를 입력하고 기업진단 해보세요!"),
+            const Text("아무거나"),
             const TextField(
               decoration: InputDecoration(
-                  label: Text("건설종목"), border: OutlineInputBorder()),
+                  label: Text("아무거나1"), border: OutlineInputBorder()),
             ),
             const TextField(
               decoration: InputDecoration(
@@ -41,10 +41,6 @@ class _IputFieldState extends State<IputField> {
             const TextField(
               decoration: InputDecoration(
                   label: Text("자본금"), border: OutlineInputBorder()),
-            ),
-            const TextField(
-              decoration: InputDecoration(
-                  label: Text("기술자"), border: OutlineInputBorder()),
             ),
             Text(_counter.toString()),
             TextButton(

@@ -1,4 +1,4 @@
-package com.example.flutter_sehan
+package com.example.gpt_flutter
 
 import io.flutter.embedding.android.FlutterActivity
 
